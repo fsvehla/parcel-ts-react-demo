@@ -1,0 +1,60 @@
+@import 'include/reset.css';
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Quadraat Pro', 'New York', serif;
+  line-height: 2rem;
+}
+
+body {
+  margin: 0 auto;
+  padding-top: 1rem;
+
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 1rem;
+
+    li {
+      line-height: 2.8rem;
+
+      border-bottom: 1px dashed gray;
+      font-size: 1.1rem;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      label {
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+@media print {
+  html {
+    font-size: 10pt;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+
+    max-width: 100%;
+  }
+
+  @page {
+    margin: 8mm;
+  }
+}
+
